@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Garaje-Monospace0515';
+  src:    url('./fonts/GarajeTrial-205TF/Garage Wide Monospace/Variable 0505-0515 Monospace/GarajeMonospace0505-0515Trial-VAR.ttf');
+  src:    url('./fonts/GarajeTrial-205TF/Garage Wide Monospace/Variable 0505-0515 Monospace/GarajeMonospace0505-0515Trial-VAR.ttf') format('truetype');        
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+    font-family: 'GarajeMultiTrial-Black';
+    src: url('./fonts/GarajeTrial-205TF/Garaje Multi/GarajeMultiTrial-Black.otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Clifton-Italic';
+    src: url('./fonts/CliftonTrial-205TF/CliftonTrial-Italic.otf');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'GT-Haptik Rotalic';
+    src: url('./fonts/Web/GT-Haptik-Regular-Rotalic.woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'GT-Haptik Rotalic-Black';
+    src: url('./fonts/Web/GT-Haptik-Black-Rotalic.woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+
+body {
+  margin: 0;
+}
+/* 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+h1{
+  font-family: 'GT-Haptik Rotalic-Black';
+  font-size: 10vh;
+  color: #ffffff;
+  margin-bottom: 0;
+  /* color: #000000; */
+
+}
+li {
+  font-family: 'Clifton-Italic';
+  font-size: 5vh;
+  list-style-type:none;
+  color: #ffffff;
+  /* color: #000000; */
+}
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
