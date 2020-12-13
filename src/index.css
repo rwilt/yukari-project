@@ -14,8 +14,15 @@
   }
 
   @font-face {
-    font-family: 'Clifton-Italic';
+    font-family: 'CliftonTrial-Italic';
     src: url('./fonts/CliftonTrial-205TF/CliftonTrial-Italic.otf');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'CliftonTrial-Regular';
+    src: url('./fonts/CliftonTrial-205TF/CliftonTrial-Regular.otf');
     font-weight: normal;
     font-style: italic;
   }
@@ -34,7 +41,18 @@
     font-style: normal;
   }
 
-  
+  @font-face {
+    font-family: 'savateitalique';
+    src: url('./fonts/Savate-master/web/savate-italique-webfont.eot');
+    src: url('./fonts/Savate-master/web/savate-italique-webfont.eot') format('embedded-opentype'),
+         url('./fonts/Savate-master/web/savate-italique-webfont.woff2') format('woff2'),
+         url('./fonts/Savate-master/web/savate-italique-webfont.woff') format('woff'),
+         url('./fonts/Savate-master/web/savate-italique-webfont.ttf') format('truetype'),
+         url('./fonts/Savate-master/web/savate-italique-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
   margin: 0;
@@ -45,8 +63,17 @@ code {
     monospace;
 } */
 
+.nav-container{
+border: 1px solid black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 150px;
+}
+
 h1{
-  font-family: 'GT-Haptik Rotalic-Black';
+  font-family: 'savateitalique';
   font-size: 10vh;
   color: #ffffff;
   margin-bottom: 0;
@@ -54,7 +81,7 @@ h1{
 
 }
 li {
-  font-family: 'Clifton-Italic';
+  font-family: 'CliftonTrial-Regular';
   font-size: 5vh;
   list-style-type:none;
   color: #ffffff;
@@ -67,4 +94,33 @@ video {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover{
+  font-family: 'CliftonTrial-Italic';
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.brands-front-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 40px; */
+}
+
+.brand-logo{
+  max-width: 300px;
+  padding: 2%;
+}
+
+.rosie, p{
+  font-family: 'CliftonTrial-Regular';
+  font-weight: 2px;
+  color: #ffffff;
 }
