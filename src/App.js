@@ -1,8 +1,11 @@
 import './App.css';
+import React, {useState, useEffect} from 'react';
 // import video from './paintbg.mp4';
 import video from './cloudy.mp4';
 
 function App() {
+// let [clientList, setClientList] = useState([])
+
   return (
     <div className="App">
         <video autoPlay loop muted>
@@ -32,7 +35,8 @@ function App() {
           </div> */}
           <div className="credit">
             {/* remove hover effect on my name? change the font style entirely? idk.  */}
-            <p>site design by <a className="rosie" href="http://www.rosie-wilt.com">rosie wilt</a></p>
+            <p className="site-info">site design & development by <a className="rosie" href="http://www.rosie-wilt.com">rosie wilt</a></p>
+            {/* <p>video by lisa fotios</p> */}
           </div>
     </div>
   );

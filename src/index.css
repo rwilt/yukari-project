@@ -64,7 +64,7 @@ code {
 } */
 
 .nav-container{
-border: 1px solid black;
+/* border: 1px solid black; */
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -119,8 +119,9 @@ a:hover{
   padding: 2%;
 }
 
-.rosie, p{
+.rosie, .site-info{
   font-family: 'CliftonTrial-Regular';
+  font-size: 2vh;
   font-weight: 2px;
   color: #ffffff;
 }
