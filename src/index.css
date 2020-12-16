@@ -76,7 +76,7 @@ h1{
   font-family: 'savateitalique';
   font-size: 10vh;
   color: #ffffff;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   /* color: #000000; */
 
 }
@@ -135,23 +135,120 @@ a:hover{
   right: 0;
   top: 0;
   overflow-x: hidden;
-  z-index: 1;
-  display: flex;
+  display: grid;
+  grid-gap: 50px 100px;
+
+}
+.cloud-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 25vh;
+  row-gap: 4em;
+  margin-top: 2%;
+  /* border: 4px solid blue; */
 }
 
-.cloud-div{
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
+
+@keyframes vibrate-3 {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+
+.cloud-div1{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  position: relative;
+  margin: 10px;
+  animation: vibrate-1 2s linear infinite both;
+
+}
+.cloud-div2{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  position: relative;
+  margin: 10px;
+  animation: vibrate-3 3s linear infinite reverse both;
+
+}
+
 .cloud-img{
-  max-height: 300px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  max-height: 275px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+ 
 }
 
 .brand-name{
-  margin:0;
-  padding:0;
-  border: 1px solid black;
+  font-family: 'CliftonTrial-Italic';
+  font-size: 3vw;
+  transition: transform .2s;
+  /* border: 1px solid black; */
+}
+
+.brand-name:hover{
+  transform: scale(1.1);
 }

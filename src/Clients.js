@@ -6,13 +6,23 @@ import Cloud3 from './cloud3.png'
 
 
 let Clients = (props) => {
-    
+    console.log("cloud props is, ", props)
+
+    let clientMapper = () => {
+        return props.clientList.map((e) => {
+        return <Cloud
+        key={e}
+        name={e}
+        />
+        })
+    }
 
     return (
         // this is the clients page which will render all of the cloud divs
         <div className="client-page">
-            <h1>Hello!!!!!!!</h1>
-         <Cloud/>
+            <div className="cloud-container">
+                {clientMapper()}
+            </div>
         </div>
     )
 };

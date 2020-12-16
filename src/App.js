@@ -25,7 +25,10 @@ let [clientList, setClientList] = useState(["Porter Japan", "Yan Yan Knits", "WR
           <li><NavLink to="/clients">Clients</NavLink></li>
           <li><a href="/">Contact</a></li>
           <br/>
-          <Route path="/clients" component={Clients}/>
+          <Route path="/clients">
+          <Clients
+          clientList={clientList}/>
+          </Route>
 
         </ul>
         </nav>
