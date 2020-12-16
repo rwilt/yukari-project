@@ -125,3 +125,33 @@ a:hover{
   font-weight: 2px;
   color: #ffffff;
 }
+
+.client-page{
+  background-color: #A8D0DB;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  z-index: 1;
+  display: flex;
+}
+
+.cloud-div{
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cloud-img{
+  max-height: 300px;
+  border: 1px solid black;
+}
+
+.brand-name{
+  margin:0;
+  padding:0;
+  border: 1px solid black;
+}

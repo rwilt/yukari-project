@@ -2,9 +2,12 @@ import './App.css';
 import React, {useState, useEffect} from 'react';
 // import video from './paintbg.mp4';
 import video from './cloudy.mp4';
+import {NavLink, Link} from 'react-router-dom';
+import Clients from './Clients'
+import { Switch, BrowserRouter as Router, Route} from 'react-router-dom';
 
 function App() {
-// let [clientList, setClientList] = useState([])
+let [clientList, setClientList] = useState(["Porter Japan", "Yan Yan Knits", "WR", "Paper Project", "Kuro", "DAR"])
 
   return (
     <div className="App">
@@ -17,10 +20,12 @@ function App() {
         <ul>
           {/* change the below to nav links- make sure all have target-blank.
           try page transitions?  */}
+
           <li><a href="/">Services</a></li>
-          <li><a href="/">Clients</a></li>
+          <li><NavLink to="/clients">Clients</NavLink></li>
           <li><a href="/">Contact</a></li>
           <br/>
+          <Route path="/clients" component={Clients}/>
 
         </ul>
         </nav>
