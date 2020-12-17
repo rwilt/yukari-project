@@ -23,6 +23,7 @@ let Clients = (props) => {
             <div className="cloud-container">
                 {clientMapper()}
             </div>
+            <a href="/">home</a>
         </div>
     )
 };

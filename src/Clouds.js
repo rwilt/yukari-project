@@ -6,15 +6,16 @@ import Cloud2 from './cloud2.png'
 let Cloud = (props) => {
     let [cloudList, setCloudList] = useState([Cloud1])
 console.log(props, "props from cloud")
-    let randomCloud = () => {
-        let randNum = Math.random()
 
-        return cloudList[Math.floor(randNum * cloudList.length)]
-  
+
+    let randomCloud = () => {
+          let randNum = Math.random()
+          
+          return cloudList[Math.floor(randNum * cloudList.length)]
     }
 
     let randomClass = () => {
-        let classNames = ['cloud-div1', 'cloud-div2']
+        let classNames = ['cloud-div1', 'cloud-div2','cloud-div1', 'cloud-div2','cloud-div1', 'cloud-div2']
         let randNum = Math.random()
 
         return classNames[Math.floor(randNum * classNames.length)]
